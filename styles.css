@@ -1,0 +1,675 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: whitesmoke;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header {
+    height: 100vh;
+    background-image: url("img-bg-01.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+h1,
+h2 {
+    font-size: 30px;
+}
+
+/* SEKCJA MAIN */
+
+main {
+    overflow: hidden;
+}
+
+main div.about {
+    position: relative
+}
+
+main div.about * {
+    position: absolute
+}
+
+main div.about p {
+    top: 40vh;
+    left: 15vw;
+    padding: 20px;
+}
+
+/* SEKCJA ZDJĘĆ */
+
+section.features {
+    max-width: 1600px;
+    margin: 30px auto 0;
+    padding: 5%;
+    text-align: center;
+    height: 100vh;
+}
+
+div.feature {
+    margin-top: 20px;
+    width: 33%;
+    padding: 20px;
+}
+
+.features p {
+    line-height: 160%;
+    margin: 20px 0;
+    padding: 0 10px;
+}
+
+/* SEKCJA OPINII */
+
+section.opinions {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 5%;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+section.opinions div.opinion {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 20px auto;
+    justify-content: space-around
+}
+
+section.opinions div.opinion:nth-of-type(even) {
+    flex-direction: row;
+}
+
+section.opinions div.opinion img {
+    flex-basis: 30%
+}
+
+section.opinions div.opinion p {
+    flex-grow: 1;
+    line-height: 180%;
+    margin: 20px 0;
+    padding: 10px 10px;
+}
+
+section.opinions h2 {
+    margin-bottom: 50px;
+}
+
+/* SEKCJA MOTTO */
+
+section.motto {
+    height: 110vh;
+    position: relative;
+    overflow: hidden;
+}
+
+section.motto img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+}
+
+section.motto div.mt {
+    position: absolute;
+    width: 50vw;
+    height: 40vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 10vh;
+}
+
+section.motto div.mt p {
+    padding: 15px;
+}
+
+/* FOOTER */
+
+footer {
+    height: 10vh;
+    background-color: #c50063;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}
+
+@media (min-width:320px) {
+
+    h1,
+    h2 {
+        font-size: 18px;
+    }
+
+    /* MAIN */
+
+    main {
+        height: 100vh;
+    }
+
+    main div.about img {
+        top: 0;
+        right: -20vh;
+        height: 100vh;
+        width: auto
+    }
+
+    main div.about h1 {
+        top: 5vh;
+        left: 8vw;
+        line-height: 18px;
+        padding: 10px 40px 10px 20px;
+    }
+
+    main div.about p {
+        top: 14vh;
+        left: 8vw;
+        width: 85vw;
+        font-size: 13px;
+        background-color: rgba(255, 255, 255, 0.5)
+    }
+
+    /* SEKCJA ZDJĘĆ */
+
+    section.features {
+        margin: 5% auto;
+        padding: 5%;
+        height: 195vh;
+    }
+
+    .features img {
+        width: 70%;
+    }
+
+    div.feature {
+        margin: 5% auto;
+        float: none;
+        width: 90vw;
+        padding: 3%;
+    }
+
+    .features p {
+        line-height: 120%;
+        font-size: 13px;
+    }
+
+    /* SEKCJA OPINII */
+
+    section.opinions {
+        display: block;
+        height: 240vh
+    }
+
+    section.opinions div.opinion {
+        display: block
+    }
+
+    section.opinions h2 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    section.opinions div.opinion img {
+        width: 40%;
+        margin-top: 20px;
+    }
+
+    section.opinions p {
+        line-height: 120%;
+        margin: 10px 0;
+        padding: 5px 5px;
+        font-size: 13px;
+    }
+
+
+    /* SEKCJA MOTTO */
+
+    section.motto {
+        height: 60vh;
+        margin-top: 60px;
+    }
+
+    section.motto img {
+        bottom: 0;
+        left: -5vw;
+        height: 60vh;
+        width: auto
+    }
+
+    section.motto div.mt {
+        width: 60vw;
+        height: 30vh;
+        padding: 5vw
+    }
+
+    section.motto div.mt p {
+        padding: 5px;
+        font-size: 13px;
+    }
+
+    footer {
+        height: 5vh;
+        font-size: 10px
+    }
+}
+
+@media (min-width:360px) {
+
+    h1,
+    h2 {
+        font-size: 20px;
+    }
+
+    /* MAIN */
+
+    main div.about h1 {
+        line-height: 20px;
+    }
+
+    main div.about p {
+        font-size: 16px;
+    }
+
+    /* SEKCJA ZDJĘĆ */
+
+    .features p {
+        font-size: 16px;
+    }
+
+    /* SEKCJA OPINII */
+
+    section.opinions h2 {
+        margin: auto auto 10px auto;
+    }
+
+    section.opinions p {
+        font-size: 16px
+    }
+
+    /* SEKCJA MOTTO */
+
+    section.motto {
+        margin-top: 20px;
+    }
+
+    section.motto div.mt {
+        height: 35vh;
+    }
+
+    section.motto div.mt p {
+        font-size: 16px;
+    }
+
+    footer {
+        height: 8vh;
+        font-size: 12px;
+    }
+}
+
+@media(min-width:390px) {
+    section.features {
+        height: 150vh;
+    }
+
+    section.opinions {
+        height: 180vh;
+    }
+
+    section.motto div.mt {
+        padding: 10vw;
+    }
+}
+
+@media(min-width:410px) {
+    main div.about p {
+        width: 60vw;
+    }
+
+    section.features {
+        height: 140vh;
+    }
+
+    section.opinions {
+        height: 130vh;
+    }
+}
+
+@media(min-width:530px) {
+    section.features {
+        height: 190vh;
+    }
+
+    section.opinions {
+        height: 170vh;
+    }
+}
+
+@media(min-width:768px) and (orientation: portrait) {
+
+    h1,
+    h2 {
+        font-size: 30px;
+    }
+
+    main div.about h1 {
+        line-height: 30px;
+        padding: 10px 20px;
+    }
+
+    main div.about p {
+        width: 45vw;
+        font-size: 20px;
+    }
+
+    section.features {
+        height: 170vh;
+    }
+
+    .features p,
+    .features h3 {
+        font-size: 20px;
+        line-height: 160%;
+    }
+
+    section.opinions {
+        height: 160vh;
+    }
+
+    section.motto div.mt p {
+        font-size: 20px;
+    }
+
+    section.opinions p {
+        font-size: 20px;
+
+    }
+}
+
+@media(min-width:820px) and (orientation:portrait) {
+    main div.about h1 {
+        left: 15vw;
+    }
+
+    main div.about p {
+        left: 15vw;
+        width: 35vw;
+    }
+
+    section.features {
+        height: 150vh;
+    }
+
+    section.opinions {
+        height: 140vh;
+    }
+
+    section.motto div.mt {
+        width: 50vw;
+        height: 30vh;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}
+
+@media(min-width:530px) and (orientation:landscape) {
+    main div.about p {
+        width: 85vw;
+        top: 16vh;
+        font-size: 13px;
+    }
+
+    section.features {
+        height: 380vh;
+    }
+
+    .features p {
+        font-size: 13px;
+    }
+
+    section.opinions {
+        height: 350vh;
+    }
+
+    section.opinions div.opinion p {
+        font-size: 13px;
+    }
+
+    section.motto img {
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+    }
+
+    section.motto div.mt {
+        height: 45vh;
+        padding: 5vw
+    }
+
+    section.motto div.mt p {
+        font-size: 13px;
+    }
+}
+
+@media(min-width: 640px) and (orientation: landscape) {
+    main div.about img {
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: auto
+    }
+
+    main div.about p {
+        width: 60vw;
+    }
+
+    section.features {
+        height: 350vh;
+    }
+
+    section.opinions {
+        height: 330vh;
+    }
+}
+
+@media(min-width: 800px) and (orientation: landscape) {
+    main div.about p {
+        width: 50vw;
+    }
+
+    section.features {
+        height: 400vh;
+    }
+
+    section.opinions {
+        height: 410vh;
+    }
+}
+
+@media(min-width: 1024px) and (orientation:landscape) {
+
+    h1,
+    h2 {
+        font-size: 30px;
+    }
+
+    main div.about h1 {
+        line-height: 30px;
+        padding: 10px 20px;
+    }
+
+    main div.about p {
+        width: 50vw;
+        font-size: 20px;
+    }
+
+    /* SEKCJA ZDJĘĆ */
+
+    section.features {
+        margin: 30px auto 0;
+        padding: 5%;
+        text-align: center;
+        height: 280vh;
+    }
+
+    .features img {
+        width: 100%;
+        margin: 5px 0 10px;
+        max-width: 375px;
+    }
+
+    .features p {
+        font-size: 20px;
+        line-height: 160%;
+        margin: 20px 0;
+        padding: 0 10px;
+    }
+
+    /* SEKCJA OPINII */
+
+    section.opinions {
+        height: 340vh
+    }
+
+    section.opinions div.opinion p {
+        font-size: 20px;
+        line-height: 180%;
+        margin: 20px 0;
+        padding: 10px 10px;
+    }
+
+    /* SEKCJA MOTTO */
+
+    section.motto div.mt {
+        width: 50vw;
+        height: 50vh;
+        padding: 10vh;
+    }
+
+    section.motto div.mt p {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    /* FOOTER */
+
+    footer {
+        height: 10vh;
+        font-size: 16px;
+    }
+}
+
+@media(min-width:1280px) {
+    /* SEKCJA MAIN */
+
+    main {
+        height: 110vh;
+    }
+
+    main div.about img {
+        top: -10%;
+        right: 0;
+    }
+
+    main div.about h1 {
+        top: 15vh;
+        left: 15vw;
+    }
+
+    main div.about p {
+        top: 30vh;
+        left: 15vw;
+        width: 35vw;
+    }
+
+    /* SEKCJA ZDJĘĆ */
+
+    section.features {
+        height: 100vh;
+    }
+
+    div.feature {
+        margin-top: 20px;
+        float: left;
+        width: 33%;
+        padding: 20px;
+    }
+
+    .features p {
+        margin: 20px 0;
+    }
+
+    /* SEKCJA OPINII */
+
+    section.opinions {
+        display: flex;
+        height: 120vh;
+        width: 100%;
+    }
+
+    section.opinions div.opinion {
+        display: flex;
+    }
+
+    section.opinions div.opinion:nth-of-type(even) {
+        flex-direction: row;
+    }
+
+    /* SEKCJA MOTTO */
+
+    section.motto img {
+        height: auto;
+    }
+
+    section.motto div.mt {
+        width: 50vw;
+        height: 40vh;
+    }
+}
+
+@media(min-width:1300px) {
+    main {
+        height: 130vh;
+    }
+
+    main div.about h1 {
+        top: 25vh;
+        left: 15vw;
+    }
+
+    main div.about p {
+        top: 40vh;
+        left: 15vw;
+    }
+
+    section.opinions {
+        height: 150vh;
+    }
+}
